@@ -1,20 +1,22 @@
 # Artwork-Tracker
 
-This Artwork Tracker allows a user to access and change the artists and artwork stored in a Database via API. Artwork Tracker uses Flask, GraphQL, Graphene, SQLAlchemy, and PostgreSQL
+This Artwork Tracker allows a user to access and change the artists and artwork stored in a relational Database via API. Artwork Tracker uses Flask, GraphQL, Graphene, SQLAlchemy, and PostgreSQL. A code first approach is used and then ORM SQLAlchemy creates the tables in PostgreSQL.
 
 
 
 #
-To Run:
+Instructions To Run:
 
 1. Clone Repo
 2. pip install -r requirements.txt
-3. type: python create_db.py
-4. type: python seed_db.py
-5. Run Flask
-6. Use Postman, /graphql to access API
+3. Create Database in PostgreSQL
+4. create connection.py with variable connection_string = "postgres://YourUserName:YourPassword@YourHostname:Port/YourDatabaseName"
+5. type: python create_db.py
+6. type: python seed_db.py
+7. Run Flask
+8. Use Postman, /graphql to access API
 
-
+* Written in Python 3.10.4
 
 #
 Milestones
@@ -33,11 +35,13 @@ Milestones
 
 [x] Seed Database
 
-[ ] Define Schema
+[x] Define Schema
 
-[ ] Create Query
+[x] Create Query
 
-[ ] Create Mutation
+[x] Create Mutation
+
+[] Create url rule, routes, pages, etc
 
 #
 Future Directions:

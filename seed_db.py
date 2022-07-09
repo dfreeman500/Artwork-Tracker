@@ -47,7 +47,7 @@ session.add_all([new_artist1, new_artist2, new_artist3,
 
 session.commit()
 
-
+#Queries
 session.query(Artist).all()
 session.query(Artwork).all()
 session.query(Artwork.title).all()
