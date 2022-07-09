@@ -9,27 +9,29 @@ To Run:
 
 1. Clone Repo
 2. pip install -r requirements.txt
-3. Run Flask
-4. Use Postman, /graphql to access API
+3. type: python create_db.py
+4. type: python seed_db.py
+5. Run Flask
+6. Use Postman, /graphql to access API
 
 
 
 #
 Milestones
 
-[ ] Create virtual environment
+[x] Create virtual environment
 
-[ ] Pip install packages
+[x] Pip install packages
 
-[ ] Create reqirements.txt 
+[x] Create reqirements.txt 
 
-[ ] Create tables via classes 
+[x] Create tables via classes
 
-[ ] Create connection string for postgreSQL
+[x] Create connection string for postgreSQL
 
-[ ] Create Database
+[x] Create Database
 
-[ ] Seed Database
+[x] Seed Database
 
 [ ] Define Schema
 
@@ -39,8 +41,9 @@ Milestones
 
 #
 Future Directions:
-1. Use endpoints /artist and artwork to display database using React
+1. Use endpoints /artist, /artist/id, /artwork, artwork/id to display database using React
+2. Host on AWS
 
 
 #
-**Images are chosen randomly from https://source.unsplash.com
+**Images are from https://source.unsplash.com and actual attribution of photos should be obtained from there
