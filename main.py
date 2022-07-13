@@ -26,6 +26,6 @@ app.add_url_rule(
 
 
 if __name__ == "__main__":
-    webbrowser.open("http://localhost:5000/")
+    webbrowser.open("http://localhost:5000/graphql")
 
 app.run(debug=True,use_reloader=False)

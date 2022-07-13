@@ -65,7 +65,7 @@ class ArtworkMutation(graphene.Mutation):
     artwork = graphene.Field(lambda: ArtworkSchema)
 
     def mutate(self, info, artist_id, title, year, artwork_img_url, artwork_type):
-        artist = session.query(ArtistDBModel).filter_by(id=artist_id).firt()
+        artist = session.query(ArtistDBModel).filter_by(id=artist_id).first()
 
         new_artwork = ArtworkDBModel(
             artist_id=artist_id,

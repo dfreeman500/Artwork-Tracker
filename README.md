@@ -14,7 +14,7 @@ Instructions To Run:
 5. type: python create_db.py
 6. type: python seed_db.py
 7. Run Flask
-8. Use Postman, /graphql to access API
+8. Use Postman or webbrowser at http://localhost:5000/graphql to access API
 
 * Written in Python 3.10.4
 
@@ -46,7 +46,8 @@ Milestones
 #
 Future Directions:
 1. Use endpoints /artist, /artist/id, /artwork, artwork/id to display database using React
-2. Host on AWS
+2. Testing
+3. Host on AWS
 
 
 #
@@ -55,4 +56,3 @@ Future Directions:
 
 
 
-## TODO - comment, more mutations, queries

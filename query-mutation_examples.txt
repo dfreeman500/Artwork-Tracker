@@ -1,0 +1,86 @@
+{
+  allArtists(sort: NAME_DESC) {
+    edges {
+      node {
+        name
+      }
+    }
+  }
+}
+
+
+{
+  allArtists {
+    edges {
+      node {
+        name
+        email
+        artistImgUrl
+      }
+    }
+  }
+}
+
+{
+  allArtists {
+    edges {
+      node {
+        name
+        email
+        artistImgUrl
+        artwork {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+{
+  allArtwork {
+    edges {
+      node {
+        title
+        artworkType
+        artworkImgUrl
+        artist {
+          id
+        }
+      
+      }
+    }
+  }
+}
+
+
+
+---------------------------------------------------------------
+** Note the convention changes --> mutateArtist, artistImgUrl vs artist_img_url
+
+mutation {
+  mutateArtist(name: "James Super", email: "james@super.com", artistImgUrl: "https://images.unsplash.com/photo-1611403119860-57c4937ef987") {
+    artist {
+      name
+      email
+      artistImgUrl
+      id
+    }
+  }
+}
+
+
+mutation {
+  mutateArtwork(title: "Central Tendency", year: 2022, artworkType: "photo", artistId: 1, artworkImgUrl: "https://images.unsplash.com/photo-1602922960044-d48ce791d3c0") {
+    artwork {
+      title
+      year
+      artworkType
+      artworkImgUrl
+    }
+  }
+}
