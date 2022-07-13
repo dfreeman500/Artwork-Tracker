@@ -27,12 +27,17 @@ class Query(graphene.ObjectType):
 
     all_artwork = SQLAlchemyConnectionField(ArtworkSchema.connection)
 
+    # Add Resolve search
+    #https://buildmedia.readthedocs.org/media/pdf/graphene-sqlalchemy/stable/graphene-sqlalchemy.pdf
 
 class ArtistMutation(graphene.Mutation):
     class Arguments:
         name = graphene.String(required=True)
         email = graphene.String(required=False)
         artist_img_url = graphene.String(required=False)
+
+
+
 
     artist = graphene.Field(lambda: ArtistSchema)
 
